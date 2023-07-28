@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<div id="buttons-container">
+  <div class="b1">
+    <button id="btn1" class="buttons"></button>
+  </div>
+  <div class="b2">
+    <button id="btn2" class="buttons"></button>
+  </div>
+  <div class="b3">
+    <button id="btn3" class="buttons"></button>
+  </div>
+  <div class="b4">
+    <button id="btn4" class="buttons"></button>
+  </div>
+  <div class="b5">
+    <button id="btn5" class="buttons"></button>
+  </div>
+  <div class="b6">
+    <button id="btn6" class="buttons"></button>
+  </div>
+  <div class="b7">
+    <button id="btn7" class="buttons"></button>
+  </div>
+  <div class="b8">
+    <button id="btn8" class="buttons"></button>
+  </div>
+  <div class="b9">
+    <button id="btn9" class="buttons"></button>
+  </div>
+  
+</div>
+
+
+<div id="winnerX" style="display: none;"><h1>Winner X wins!!</h1><button class="restart">Restart Game</button></div>
+
+<div id="winnerO" style="display: none;"><h1>Winner O wins!!</h1><button class="restart">Restart Game</button></div>
+
+<label for="secondPlayer" id="secondPlayerLabel" class="labelPlayer">Select a second Player:</label>
+<select id="secondPlayer">
+  <option value="playerTwo" selected="selected">Player 2</option>
+  <option value="computer">Computer</option>
+</select>
+
+  <script src="script.js"></script> 
+</body>
+</html>
