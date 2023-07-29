@@ -33,18 +33,23 @@
   <div class="b8">
     <button id="btn8" class="buttons"></button>
   </div>
-  <div class="b9">
+  <div class="b9" class="buttons">
     <button id="btn9" class="buttons"></button>
   </div>
   
 </div>
 
+<div id="message-container">
+<div id="winnerX" style="display: none;" class="end"><h1>Player <span style="color: red;">X</span> wins!!</h1><button class="restart">Restart Game</button></div>
 
-<div id="winnerX" style="display: none;"><h1>Winner X wins!!</h1><button class="restart">Restart Game</button></div>
+<div id="winnerO" style="display: none;" class="end"><h1>Player <span style="color: green;">O</span> wins!!</h1><button class="restart">Restart Game</button></div>
 
-<div id="winnerO" style="display: none;"><h1>Winner O wins!!</h1><button class="restart">Restart Game</button></div>
+<div id="draw" style="display: none;" class="end"><h1>Draw</h1><button class="restart">Restart Game</button></div>
+</div>
 
-<label for="secondPlayer" id="secondPlayerLabel" class="labelPlayer">Select a second Player:</label>
+
+
+<label for="secondPlayer" id="secondPlayerLabel" class="labelPlayer">Select a second player:</label>
 <select id="secondPlayer">
   <option value="playerTwo" selected="selected">Player 2</option>
   <option value="computer">Computer</option>
