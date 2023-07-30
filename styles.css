@@ -1,4 +1,8 @@
+
+
+
 body{
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -181,3 +185,36 @@ text-align: center;
   background-color:  rgb(166, 7, 246);
   color: black;
 }
+
+.score{
+  padding-bottom: 3rem;
+}
+
+#score-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e1, 0 0 70px #ff00e1, 0 0 80px #ff00e1, 0 0 100px #ff00e1, 0 0 150px #ff00e1;
+  animation: neonGlow 1s ease-in-out infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes neonGlow {
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff00e1, 0 0 40px #ff00e1, 0 0 50px #ff00e1, 0 0 70px #ff00e1, 0 0 80px #ff00e1, 0 0 100px #ff00e1, 0 0 150px #ff00e1;
+  }
+}
+
+#scoreX{
+  color: red;
+  font-size: 24px;
+  padding-left: 25px;
+}
+
+
+#scoreO{
+  color: rgb(6, 167, 6);
+  font-size: 24px;
+  padding-left: 25px;
+}
+

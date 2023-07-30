@@ -158,6 +158,15 @@ const board = {
     position9: undefined,
 }
 
+    let playerXScore = 0;
+    let playerOscore = 0;
+
+    function displayScore(){
+    const scoreX = document.getElementById("scoreX").innerHTML = playerXScore;
+    const scoreO = document.getElementById("scoreO").innerHTML = playerOscore;
+    }
+    displayScore();
+
 function checkWinner(){
 
     //player X check//
@@ -165,48 +174,81 @@ function checkWinner(){
     if(board.position1=== "playerMark1" && board.position2 === "playerMark1" && board.position3 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position1=== "playerMark1" && board.position5 === "playerMark1" && board.position9 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position1=== "playerMark1" && board.position4 === "playerMark1" && board.position7 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position2=== "playerMark1" && board.position5 === "playerMark1" && board.position8 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position3=== "playerMark1" && board.position6 === "playerMark1" && board.position9 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore()
     }else if(board.position3=== "playerMark1" && board.position5 === "playerMark1" && board.position7 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position4=== "playerMark1" && board.position5 === "playerMark1" && board.position6 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
     }else if(board.position7=== "playerMark1" && board.position8 === "playerMark1" && board.position9 === "playerMark1"){
         winX.style.display = "block";
         isComputerPlaying = false;
+        playerXScore++;
+        displayScore();
 
         //player O check//
 
     }else if(board.position1=== "playerMark2" && board.position2 === "playerMark2" && board.position3 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position1=== "playerMark2" && board.position5 === "playerMark2" && board.position9 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position1=== "playerMark2" && board.position4 === "playerMark2" && board.position7 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position2=== "playerMark2" && board.position5 === "playerMark2" && board.position8 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position3=== "playerMark2" && board.position6 === "playerMark2" && board.position9 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position3=== "playerMark2" && board.position5 === "playerMark2" && board.position7 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position4=== "playerMark2" && board.position5 === "playerMark2" && board.position6 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position7=== "playerMark2" && board.position8 === "playerMark2" && board.position9 === "playerMark2"){
         winO.style.display = "block";
+        playerOscore ++;
+        displayScore();
     }else if(board.position1 != undefined && board.position2 != undefined &&board.position3 != undefined &&board.position4 != undefined &&board.position5 != undefined &&board.position6 != undefined &&board.position7 != undefined &&board.position8 != undefined &&board.position9 != undefined){
         draw.style.display = "block";
+        displayScore();
     }
 }
 
@@ -257,7 +299,9 @@ secondPlayer.addEventListener('change', function() {
     board[`position${i}`] = undefined;
   }
    
-  console.log(selectedPlayer);
+  playerXScore = 0;
+  playerOscore = 0;
+  displayScore();
 });
 
 
